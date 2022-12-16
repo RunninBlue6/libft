@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
+/*   By: jknyzhen < jknyzhen@student.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/14 11:44:42 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/14 12:56:38 by jknyzhen         ###   ########.fr       */
+/*   Created: 2022/12/16 22:02:40 by jknyzhen          #+#    #+#             */
+/*   Updated: 2022/12/16 22:02:40 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <libft.h>
 
-int ft_isalpha(int c)
+int ft_isalnum(int c)
     {
-        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		    return (1);
-		return (0);
+        if ((c>= 'A' && c<= 'Z') || (c>= 'a' && c<= 'z')) || (c>= '0' && c<= '9')
+            return(1);
+        return(0);
     }
