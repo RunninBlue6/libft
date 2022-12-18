@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 12:48:35 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/18 12:53:03 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/18 13:56:07 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@ int ft_toupper(int c)
 {
     if (c >= 'a' && c <= 'z')
     {
-        c -= 32;
-        return  (1);
+        return  (c -= 32);
     }
-    return  (0);
+    else{
+        return  (c);
+    }
 }
