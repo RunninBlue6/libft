@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 13:56:47 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/18 14:20:31 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/18 14:27:54 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     {
         s1++;
         s2++;
-        n--
+        n--;
     }
     return ((unsigned char)*s1 - (unsigned char)*s2);
 }
