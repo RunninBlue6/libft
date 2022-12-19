@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jknyzhen < jknyzhen@student.42wolfsburg    +#+  +:+       +#+        */
+/*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 23:27:02 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/17 23:27:02 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:59:52 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
        memory area dest.  The memory areas must not overlap.  Use
        memmove(3) if the memory areas do overlap.
        the memcpy() function returns a pointer to dest.*/
+
+#include "libft.h"
+
 void    *ft_memcpy(void *dest, const void *src, size_t n)
 {
     size_t	i;
