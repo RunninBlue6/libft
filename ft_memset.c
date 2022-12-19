@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jknyzhen < jknyzhen@student.42wolfsburg    +#+  +:+       +#+        */
+/*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 21:12:51 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/17 21:12:51 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:59:56 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memset(void *b, int c, size_t len)
 {

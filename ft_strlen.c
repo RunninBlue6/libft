@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jknyzhen < jknyzhen@student.42wolfsburg    +#+  +:+       +#+        */
+/*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 20:51:38 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/17 20:51:38 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:59:39 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_strlen(char  *str)
 {

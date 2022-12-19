@@ -6,9 +6,11 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 12:26:22 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/18 13:01:02 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 17:00:25 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t  *ft_strlcat(char *dest, char *src)
 {
@@ -16,7 +18,7 @@ size_t  *ft_strlcat(char *dest, char *src)
     int d_s;
 
     int = 0;
-    d_s = = 0;
+    d_s = 0;
     while (dest[d_s])
     {
         d_s++;

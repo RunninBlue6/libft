@@ -6,9 +6,11 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 12:48:35 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/18 13:56:07 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:59:44 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_toupper(int c)
 {

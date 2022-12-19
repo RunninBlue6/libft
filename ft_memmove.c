@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 23:33:48 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/18 12:24:12 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:59:54 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
        temporary array that does not overlap src or dest, and the bytes
        are then copied from the temporary array to dest.
        The memmove() function returns a pointer to dest.*/
+
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t len)
 {
