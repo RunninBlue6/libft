@@ -6,11 +6,13 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 15:40:08 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/18 15:58:04 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:59:51 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //The memcmp() function compares the first n bytes (each interpreted as unsigned char) of the memory areas s1 and s2.
+
+#include "libft.h"
 
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
