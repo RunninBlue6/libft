@@ -6,9 +6,11 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:44:42 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/14 12:56:38 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/19 17:03:29 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isalpha(int c)
 {
