@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 16:25:46 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/19 16:42:25 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/20 14:03:04 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_ascii(int c);
-int		ft_isprint(int c)l;
+int		ft_isprint(int c);
 int		ft_strlen(char  *str);
 void    *ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
