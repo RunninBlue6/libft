@@ -6,11 +6,11 @@
 #    By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/22 13:48:03 by jknyzhen          #+#    #+#              #
-#    Updated: 2022/12/22 13:49:14 by jknyzhen         ###   ########.fr        #
+#    Updated: 2022/12/22 17:35:17 by jknyzhen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = $(wildcard *.c)  #ft_memset.c  \
+SRCS = ft_*.c  #ft_memset.c  \
   ft_bzero.c  \
   ft_memcpy.c  \
   ft_memmove.c  \
@@ -57,9 +57,9 @@ SRCS = $(wildcard *.c)  #ft_memset.c  \
 
 NAME = libft.a
 
-OBJS_DIR = objs/
+# OBJS_DIR = objs/
 OBJS = $(SRCS:.c=.o)
-OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
+# OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
 
 #OBJSB = $(SRCSB:.c=.o)
 #OBJECTS_BONUS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJSB))
@@ -68,25 +68,25 @@ CC = gcc
 
 CC_FLAGS = -Wall -Wextra -Werror
 
-$(OBJS_DIR)%.o : %.c libft.h
-	@mkdir -p $(OBJS_DIR)
-	@echo "Compiling: $<"
-	@gcc $(CC_FLAGS) -c $< -o $@
+# $(OBJS_DIR)%.o : %.c libft.h
+# 	@mkdir -p $(OBJS_DIR)
+# 	@echo "Compiling: $<"
+# 	@gcc $(CC_FLAGS) -c $< -o $@
 
-$(NAME): $(OBJECTS_PREFIXED)
-	@ar r $(NAME) $(OBJECTS_PREFIXED)
+$(NAME): $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 	@echo "Libft Done !"
 
 all: $(NAME)
 
 clean:
-	rm -rf $(OBJS_DIR)
+	rm -rf $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-bonus: $(OBJECTS_BONUS_PREFIXED)
-	@ar r $(NAME) $(OBJECTS_BONUS_PREFIXED)
-	@echo "Libft Bonus Done"
+# bonus: $(OBJECTS_BONUS_PREFIXED)
+# 	@ar r $(NAME) $(OBJECTS_BONUS_PREFIXED)
+# 	@echo "Libft Bonus Done"
