@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 22:49:51 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/22 16:06:56 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/22 17:32:39 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
  void ft_bzero(void *s, size_t n)
 {
- int i;
+ size_t i;
 
     i = 0;
     char    *p;
