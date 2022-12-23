@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 23:33:48 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/19 16:59:54 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/23 14:22:39 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,23 @@
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-       unsigned char *temp1;
-       unsigned char *temp2;
+	unsigned char	*temp1;
+	unsigned char	*temp2;
 
-       temp1 = dest;
-       temp2 = (unsigned char *)src;
-       if (dest < src)
-       {
-              return(ft_memcpy(dest, src, len));
-       }
-       if (dest > src)
-       {
-              while (len--)
-              {
-                     temp1[len] = temp2[len];
-              }
-       }
-       return (dest);
+	temp1 = dest;
+	temp2 = (unsigned char *)src;
+	if (dest < src)
+	{
+		return (ft_memcpy(dest, src, len));
+	}
+	if (dest > src)
+	{
+		while (len--)
+		{
+			temp1[len] = temp2[len];
+		}
+	}
+	return (dest);
 }
