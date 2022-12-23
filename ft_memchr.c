@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 15:19:14 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/23 14:59:57 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/23 16:49:45 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
-	char	x;
-	char	*ptr;
+	size_t			i;
+	unsigned char	x;
+	unsigned char	*ptr;
 
 	i = 0;
 	x = (unsigned char) c;
