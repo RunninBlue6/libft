@@ -6,11 +6,11 @@
 #    By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/22 13:48:03 by jknyzhen          #+#    #+#              #
-#    Updated: 2022/12/23 13:53:37 by jknyzhen         ###   ########.fr        #
+#    Updated: 2022/12/23 16:47:45 by jknyzhen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_*.c  #ft_memset.c  \
+SRCS =  ft_memset.c  \
   ft_bzero.c  \
   ft_memcpy.c  \
   ft_memmove.c  \
