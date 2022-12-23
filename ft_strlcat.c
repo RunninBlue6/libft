@@ -6,29 +6,36 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 12:26:22 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/22 13:59:04 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/23 14:48:42 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
-// size_t  *ft_strlcat(char *dest, char *src)
-// {
-//     int i;
-//     int d_s;
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+	size_t	i_dst;
+	size_t	i_src;
+	size_t	src_len;
+	size_t	dst_len;
 
-//     int = 0;
-//     d_s = 0;
-//     while (dest[d_s])
-//     {
-//         d_s++;
-//     }
-//     while   (src[i])
-//     {
-//         dest[d_s] = src[i];
-//         d_s++;
-//         i++;
-//     }
-//     dest[d_s] = '\0';
-//     return  (dest);
-// }
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
+	i_dst = dst_len;
+	i_src = 0;
+	while (src[i_src] && i_src < (dstsize - dst_len - 1) && dst_len < dstsize)
+	{
+		dst[i_dst] = src[i_src];
+		i_dst++;
+		i_src++;
+	}
+	dst[i_dst] = '\0';
+	if (dstsize < dst_len)
+	{
+		return (dstsize + src_len);
+	}
+	else
+	{
+		return (dst_len + src_len);	
+	}
+}
