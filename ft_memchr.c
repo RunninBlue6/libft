@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 15:19:14 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/19 16:59:50 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/23 14:59:57 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,20 @@
 
 #include "libft.h"
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    size_t  i;
+	size_t	i;
+	char	x;
+	char	*ptr;
 
-    unsigned char   *p;
-    p = (unsigned char *)s;
-
-    i = 0;
-    while   (i < n)
-    {
-        if  (*p == (unsigned char )c)
-        {
-            return  ((void *)p);
-        }
-        p++;
-        i++;
-    }
-    return  (NULL);
+	i = 0;
+	x = (unsigned char) c;
+	ptr = (unsigned char *) s;
+	while (i < n)
+	{
+		if (ptr[i] == x)
+			return (&ptr[i]);
+		i++;
+	}
+	return (NULL);
 }
