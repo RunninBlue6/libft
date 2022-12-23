@@ -6,7 +6,7 @@
 #    By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/22 13:48:03 by jknyzhen          #+#    #+#              #
-#    Updated: 2022/12/23 16:47:45 by jknyzhen         ###   ########.fr        #
+#    Updated: 2022/12/23 17:52:52 by jknyzhen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,20 +29,7 @@ SRCS =  ft_memset.c  \
   ft_strlcat.c \
   ft_strlcpy.c \
   ft_strncmp.c \
-  ft_strnstr.c \
   ft_strrchr.c \
-  ft_calloc.c  \
-  ft_strdup.c  \
-  ft_substr.c  \
-  ft_strtrim.c \
-  ft_split.c  \
-  ft_itoa.c  \
-  ft_strmapi.c \
-  ft_striteri.c \
-  ft_putchar_fd.c \
-  ft_putstr_fd.c \
-  ft_putendl_fd.c \
-  ft_putnbr_fd.c \
 
 #SRCSB = $(SRCS)    \
   ft_lstadd_back.c \
