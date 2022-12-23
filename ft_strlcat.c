@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 12:26:22 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/23 14:48:42 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/23 16:57:00 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	else
 	{
-		return (dst_len + src_len);	
+		return (dst_len + src_len);
 	}
 }
