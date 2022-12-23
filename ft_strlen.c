@@ -6,18 +6,20 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 20:51:38 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/19 16:59:39 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/23 14:26:13 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(char  *str)
+int	ft_strlen(char *s)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while   (str[i])
-        i++;
-    return  (i);
+	i = 0;
+	while (s[i])
+	{
+		i++;
+	}
+	return (i);
 }
