@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 21:13:27 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/23 14:11:53 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/24 13:32:05 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,23 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "libft.h"
-/*a-destenation b-source*/
-char	*ft_strlcpy(char *a, char *b)
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int	i;
+	size_t	i;
+	size_t	src_len;
 
 	i = 0;
-	while (b[i] != '\0')
+	src_len = ft_strlen(src);
+	if (dstsize > 0)
 	{
-		a[i] = b[i];
-		i++;
+		dstsize--;
+		while (src[i] != '\0' && i < dstsize)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
 	}
-	a[i] = '\0';
-	return (a);
+	return (src_len);
 }
