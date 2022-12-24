@@ -6,13 +6,13 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 22:13:54 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/23 14:19:18 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/24 15:09:02 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_ascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 	{
