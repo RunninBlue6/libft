@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 16:01:41 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/19 17:00:05 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/24 14:47:35 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,28 @@
      should only be used when portability is not a concern.
 */
 #include "libft.h"
+
+char	ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t	i;
+	size_t	j;
+
+	if (!haystack && len == 0)
+		return (NULL);
+	if (!needle && len == 0)
+		return ((char *)haystack);
+	if (!needle[0])
+		return ((char *)haystack);
+	i = 0;
+	while (haystack[i] && i < len)
+	{
+		j = 0;
+		while (haystack[i + j] && needle[j]
+			&& i + j < len && haystack[i + j] == needle[j])
+			j++;
+		if (!needle[j])
+			return ((char *)(haystack + i));
+		i++;
+	}
+	return (NULL);
+}
