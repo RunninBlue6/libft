@@ -5,37 +5,72 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/18 12:26:22 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/23 16:57:00 by jknyzhen         ###   ########.fr       */
+/*   Created: 2022/12/27 14:07:26 by jknyzhen          #+#    #+#             */
+/*   Updated: 2022/12/27 14:08:03 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
+// #include <string.h>
+
+// size_t	ft_strlen(const char *s)
+// {
+// 	size_t	i;
+
+// 	i = 0;
+// 	while (s[i] != '\0')
+// 	{
+// 		i++;
+// 	}
+// 	return (i);
+// }
+
+// size_t	ft_strlcpy1(char *dst, const char *src, size_t dstsize)
+// {
+// 	size_t	i;
+// 	size_t	a;
+
+// 	i = 0;
+// 	a = ft_strlen(src);
+// 	if (!dstsize)
+// 		return (a);
+// 	while (src[i] && i < dstsize - 1)
+// 	{
+// 		dst[i] = src[i];
+// 		i++;
+// 	}
+// 	dst[i] = '\0';
+// 	return (a);
+// }
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i_dst;
-	size_t	i_src;
-	size_t	src_len;
-	size_t	dst_len;
+	size_t	i;
+	size_t	ret;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	i_dst = dst_len;
-	i_src = 0;
-	while (src[i_src] && i_src < (dstsize - dst_len - 1) && dst_len < dstsize)
+	i = 0;
+	if (dst == NULL)
 	{
-		dst[i_dst] = src[i_src];
-		i_dst++;
-		i_src++;
+		ret = ft_strlcpy(dst, src, dstsize - i);
+		return (ft_strlen (src));
 	}
-	dst[i_dst] = '\0';
-	if (dstsize < dst_len)
+	while (*dst && i < dstsize)
 	{
-		return (dstsize + src_len);
+		++dst;
+		++i;
 	}
-	else
-	{
-		return (dst_len + src_len);
-	}
+	ret = ft_strlcpy(dst, src, dstsize - i);
+	return (ret + i);
 }
+
+// int main()
+// {
+// 	char p[40] = "B";
+// 	char p1[40] = "B";
+// 	char *g = "AAAAAAAAA";
+// 	printf("%lu\n",strlcat(NULL,g,0));
+// 	//printf("%s\n",p);
+// 	printf("%lu\n",ft_strlcat(NULL,g,0));
+// 	//printf("%s\n",p1);
+// }
