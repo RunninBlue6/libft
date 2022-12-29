@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 15:56:42 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/29 18:03:52 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/29 18:26:55 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,13 +66,13 @@ int	counting_words(const char *str, char delim)
 
 char	**wordss(char **ptr_str, const char *s, char delim, int word_count)
 {
-	int	i;
-	int	word;
-	int	length;
+	int	i = 0;
+	int	word = 0;
+	int	length = 0;
 
-	i = 0;
-	word = 0;
-	lenght = 0;
+	// i = 0;
+	// word = 0;
+	// lenght = 0;
 	while (s[i] && word < word_count)
 	{
 		while (s[i] && s[i] == delim)
