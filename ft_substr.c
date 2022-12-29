@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 15:58:18 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/29 15:50:59 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2022/12/29 18:06:10 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,33 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <limits.h>
+
+// char	*ft_substr(char const *s, unsigned int start, size_t len)
+// {
+// 	size_t	i;
+// 	size_t	j;
+// 	char	*substr;
+
+// 	i = 0;
+// 	j = 0;
+// 	if (!s)
+// 		return (NULL);
+// 	if (strlen(s) < len)
+// 		len = strlen(s);
+// 	substr = (char *)malloc(sizeof(char) * (len + 1));
+// 	if (!substr)
+// 		return (NULL);
+// 	while (start < strlen(s) && i < len)
+// 	{
+// 		// if (i >= start && j < len)	
+// 			substr[j] = s[i + start];
+// 			j++;
+// 		// }
+// 		i++;
+// 	}
+// 	substr[j] = '\0';
+// 	return (substr);
+// }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -25,8 +52,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	j = 0;
 	if (!s)
 		return (NULL);
-	if (strlen(s) < len)
-		len = strlen(s);
+	if (ft_strlen(s) < len)
+		len = ft_strlen(s);
 	substr = (char *)malloc(sizeof(char) * (len + 1));
 	if (!substr)
 		return (NULL);
