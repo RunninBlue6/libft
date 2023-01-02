@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 18:48:25 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/29 19:57:31 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/02 15:48:48 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,4 +95,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // 	char s2[] = "Knyzhenko";
 // 	printf("%s\n", ft_strjoin(s1, s2));
 // }
-
