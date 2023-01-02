@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/24 16:52:54 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/27 15:00:32 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/02 18:18:51 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t count, size_t size)
 	arr = malloc(size * count);
 	if (!arr)
 	{
-		return (0);
+		return (NULL);
 	}
 	ft_memset(arr, 0, size * count);
 	return (arr);
