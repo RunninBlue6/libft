@@ -6,15 +6,15 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 14:23:56 by jknyzhen          #+#    #+#             */
-/*   Updated: 2023/01/02 15:53:03 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/02 15:55:37 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <limits.h>
+// #include <stdio.h>
+// #include <unistd.h>
+// #include <stdlib.h>
+// #include <limits.h>
 
 // char	*ft_strchr(const char *s, int c)
 // {
