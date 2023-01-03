@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 15:56:42 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/29 19:18:15 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/03 17:59:44 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,8 @@ char	**ft_split(char const *s, char c)
 	char	**ptr;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	i = counting_words(s, c);
 	ptr = malloc(sizeof (char *) * (i + 1));
 	if (!ptr)
