@@ -6,11 +6,12 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 18:58:09 by jknyzhen          #+#    #+#             */
-/*   Updated: 2023/01/05 19:00:18 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/05 19:15:52 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {
