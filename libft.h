@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 16:25:46 by jknyzhen          #+#    #+#             */
-/*   Updated: 2023/01/09 17:47:30 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/09 17:49:17 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list	*ft_lstnew(void *content);
 #endif
