@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 15:54:41 by jknyzhen          #+#    #+#             */
-/*   Updated: 2023/01/02 18:07:51 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/10 15:17:31 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,52 +16,47 @@
 #include <stdlib.h>
 #include <limits.h>
 
-size_t	get_len(int n)
+static int	get_len(int n)
 {
-	size_t	len;
+	int	len;
 
-	if (n == 0)
-		return (1);
 	len = 0;
-	if (n < 0)
+	if (n <= 0)
 		len++;
 	while (n)
 	{
-		n /= 10;
 		len++;
+		n = n / 10;
 	}
 	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	size_t	len;
-	size_t	i;
-	char	*result;
+	int		len;
+	char	*str;
+	long	nb;
 
 	len = get_len(n);
-	if (!(result = (char*)malloc(len + 1)))
+	nb = n;
+	str = malloc(sizeof(char) * len + 1);
+	if (!str)
 		return (NULL);
-	result[len] = '\0';
-	if (n < 0)
+	if (nb < 0)
 	{
-		result[0] = '-';
-		i = 1;
+		str[0] = '-';
+		nb = -nb;
 	}
-	else
-		i = 0;
-	while (len-- > i)
-		if (n < 0)
-		{
-			result[len] = '0' + n % 10 * (-1);
-			n = n / 10;
-		}
-		else
-		{
-			result[len] = '0' + n % 10;
-			n = n / 10;
-		}
-	return (result);
+	if (nb == 0)
+		str[0] = '0';
+	str[len--] = '\0';
+	while (nb)
+	{
+		str[len] = nb % 10 + '0';
+		len--;
+		nb = nb / 10;
+	}
+	return (str);
 }
 
 // int main()
