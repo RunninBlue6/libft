@@ -6,13 +6,13 @@
 #    By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/22 13:48:03 by jknyzhen          #+#    #+#              #
-#    Updated: 2023/01/10 18:03:53 by jknyzhen         ###   ########.fr        #
+#    Updated: 2023/01/10 19:05:18 by jknyzhen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME	=	libft.a
-# Имена скомпилированных программ
+
 SRCS	=	ft_memset.c  \
 	ft_bzero.c  \
 	ft_memcpy.c  \
@@ -54,22 +54,22 @@ SRCS_BONUS	=	ft_lstnew.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
 	ft_lstadd_back.c \
-	# ft_lstdelone.c \
+	ft_lstdelone.c \
 	# ft_lstclear.c \
 	# ft_lstiter.c \
 	# ft_lstmap.c \
 
 OBJS	=	${SRCS:.c=.o}
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
-# Чтобы только измененные файлы .c компилировались в файлы .o
+
 RM		=	rm -f
-# -f (force) делает fclean исполняемым в любое время (даже без файлов .o)
+
 CC		=	gcc
-# Компилятор
+
 CFLAGS	=	-Wall -Wextra -Werror
 
 all:		${NAME}
-# Используемые флаги
+
 ${NAME}:	${OBJS}
 			ar rcs $(NAME) $(OBJS)
 
@@ -77,11 +77,10 @@ bonus: 		$(OBJS) $(OBJS_BONUS)
 			ar rcs ${NAME} $(OBJS) ${OBJS_BONUS}
 clean:
 			${RM} ${OBJS} ${OBJS_BONUS}
-# Удаляет все файлы с .o
+
 fclean:		clean
 			${RM} ${NAME}
-# Удаляет libft.a
+
 re:			fclean all
-# Удалить и перекомпилировать
+
 .PHONY:		all clean fclean re
-# Запускаем команды, даже если файл с таким именем уже существует
