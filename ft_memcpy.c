@@ -6,7 +6,7 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 23:27:02 by jknyzhen          #+#    #+#             */
-/*   Updated: 2022/12/28 14:49:50 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/11 20:43:16 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main(){
+// 	char str[] = "memcpy test!";
+// 	char str1[30];
+// 	char str2[30];
+
+// 	ft_memcpy(str1, str, strlen(str)+1);
+// 	ft_memcpy(str2, "copy", 5);
+// 	printf("str: %s\nstr1 : %s\nstr2: %s\n",str,str1,str2);
+// 	return 0;
+// }
