@@ -6,12 +6,12 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/24 16:52:54 by jknyzhen          #+#    #+#             */
-/*   Updated: 2023/01/02 18:18:51 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/11 16:12:47 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
+// #include <stdlib.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {

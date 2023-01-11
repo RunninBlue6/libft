@@ -6,12 +6,12 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 19:15:18 by jknyzhen          #+#    #+#             */
-/*   Updated: 2023/01/05 19:21:15 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/11 16:13:36 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
+// #include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {

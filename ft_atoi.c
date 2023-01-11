@@ -6,14 +6,14 @@
 /*   By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 16:30:18 by jknyzhen          #+#    #+#             */
-/*   Updated: 2023/01/02 16:04:04 by jknyzhen         ###   ########.fr       */
+/*   Updated: 2023/01/11 16:12:40 by jknyzhen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <limits.h>
+// #include <stdio.h>
+// #include <unistd.h>
+// #include <stdlib.h>
+// #include <limits.h>
 #include "libft.h"
 
 int	ft_atoi(const char *str)
