@@ -6,7 +6,7 @@
 #    By: jknyzhen <jknyzhen@42wolfsburg.de>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/22 13:48:03 by jknyzhen          #+#    #+#              #
-#    Updated: 2023/01/11 15:47:08 by jknyzhen         ###   ########.fr        #
+#    Updated: 2023/01/11 19:12:40 by jknyzhen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,8 +56,8 @@ SRCS_BONUS	=	ft_lstnew.c \
 	ft_lstadd_back.c \
 	ft_lstdelone.c \
 	ft_lstclear.c \
-	# ft_lstiter.c \
-	# ft_lstmap.c \
+	ft_lstiter.c \
+	ft_lstmap.c \
 
 OBJS	=	${SRCS:.c=.o}
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
